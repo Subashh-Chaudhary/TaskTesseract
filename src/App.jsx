@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { TodoProvider } from "./context";
 import { TodoForm, TodoItem } from "./components";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function App() {
   const [todos, setTodos] = useState([]);
@@ -62,6 +63,18 @@ export default function App() {
             ))}
           </div>
         </div>
+
+        <a
+        href="https://github.com/Subashh-Chaudhary/TaskTesseract"
+        target="_blank"
+      >
+        <div className="text-blue-100 absolute bottom-16 right-4 lg:bottom-10 lg:right-12 flex gap-2 items-center">
+          <GitHubIcon fontSize="large" />
+          <p className="lg:text-xl  text-[13px] md:text-lg text-blue-100 font-archivo font-extrabold">
+            GitHub Repository
+          </p>
+        </div>
+      </a>
       </div>
     </TodoProvider>
   );
